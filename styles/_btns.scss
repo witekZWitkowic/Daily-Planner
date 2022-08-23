@@ -1,0 +1,32 @@
+.btn-edit {
+  font-size: 1.05rem;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 15px;
+  @include gradient-text();
+  @include underline(gold);
+  @include btn();
+}
+.btn-delete {
+  font-size: 1.05rem;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 15px;
+  color: #671616;
+  background: none;
+  transition: text-decoration .5s ease-in-out;
+  @include btn();
+  @include underline(#671616);
+}
+#btn-add-task {
+  width: 150px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  transition: .2s ease-in;
+  @include gradient-text();
+  &:hover {
+    transform: scale(1.1);
+    transition: .2s ease-in;
+  }
+}

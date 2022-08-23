@@ -1,0 +1,178 @@
+.btn-edit {
+  font-size: 1.05rem;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 15px;
+  background-image: linear-gradient(90deg, gold, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.btn-edit::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: gold;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.btn-edit:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+.btn-delete {
+  font-size: 1.05rem;
+  font-weight: bold;
+  padding: 0;
+  margin-right: 15px;
+  color: #671616;
+  background: none;
+  transition: text-decoration 0.5s ease-in-out;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+.btn-delete::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #671616;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.btn-delete:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
+#btn-add-task {
+  width: 150px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  transition: 0.2s ease-in;
+  background-image: linear-gradient(90deg, gold, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+#btn-add-task:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in;
+}
+
+* {
+  font-family: "Fira sans", sans-serif;
+}
+
+body {
+  margin-top: 100px;
+  height: 100%;
+  background-color: rgba(56, 56, 59, 0.89);
+}
+
+h1 {
+  background-image: linear-gradient(90deg, gold, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+}
+
+.flex-content {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.flex-content h2 {
+  background-image: linear-gradient(90deg, gold, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 5px;
+}
+
+.task-content {
+  font-size: 1.05rem;
+  background: none;
+  border: none;
+  cursor: default;
+  outline: none;
+}
+
+::placeholder {
+  background-image: linear-gradient(90deg, gold, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.3;
+}
+
+.task-input {
+  margin: 20px auto 0 auto;
+  width: 500px;
+  height: 50px;
+}
+.task-input .inputText {
+  margin-right: 10px;
+  width: 300px;
+  height: 50px;
+  background: rgba(129, 129, 140, 0.71);
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+.task-input .inputText:focus {
+  outline: none;
+}
+.task-input .inputText:focus::placeholder {
+  opacity: 0;
+}
+
+.content-box {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.task-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  max-width: 500px;
+  height: 50px;
+  background: rgba(129, 129, 140, 0.71);
+  border-radius: 20px;
+  padding: 0 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.completed {
+  transition: 0.5s ease-in-out;
+  transform: scale(0.9);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+input {
+  width: 350px;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.focused {
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+.focused:focus {
+  transition: 0.5s ease-in-out;
+  color: gold;
+}
+
+/*# sourceMappingURL=style.css.map */

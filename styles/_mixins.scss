@@ -1,0 +1,31 @@
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin btn(){
+  border: none;
+  cursor: pointer;
+}
+@mixin gradient-text() {
+  background-image: linear-gradient(90deg, gold, orange);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@mixin underline($color) {
+  position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $color;
+      visibility: hidden;
+      transition: all 0.3s ease-in-out; }
+    &:hover:before {
+      visibility: visible;
+      width: 100%;
+    }
+}
