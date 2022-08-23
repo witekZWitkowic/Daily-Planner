@@ -267,16 +267,16 @@ input {
     height: 40px;
   }
   input {
-    width: 230px;
+    width: 215px;
     color: white;
     transition: 0.5s ease-in-out;
   }
   .btn-delete, .btn-edit {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
   }
   #btn-add-task {
     width: 150px;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 
