@@ -1,26 +1,36 @@
 @import './_variables';
+@import './_mixins';
+@import './_btns';
 
 @media only screen and (max-width: 500px) {
   .task-input {
-    width: 400px;
+    display: flex;
+    width: 350px;
     height: 50px;
+    margin: 0;
   }
   .inputText {
-    width: 250px;
+    width: 230px;
     height: 50px;
     font-size: 1rem;
   }
   .content-box {
-    max-width: 400px;
+    max-width: 370px;
   }
-
   .task-boxes {
-    max-width: 400px;
+    max-width: 350px;
     height: 40px;
   }
   input {
-    width: 250px;
+    width: 230px;
     color: white;
     transition: .5s ease-in-out;
   }
+.btn-delete, .btn-edit {
+  font-size: 0.95rem;
+}
+#btn-add-task {
+  width: 150px;
+  font-size: 1.1rem;
+}
 }
