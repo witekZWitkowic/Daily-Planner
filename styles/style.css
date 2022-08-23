@@ -69,6 +69,29 @@
   transition: 0.2s ease-in;
 }
 
+@media only screen and (max-width: 500px) {
+  .task-input {
+    width: 400px;
+    height: 50px;
+  }
+  .inputText {
+    width: 250px;
+    height: 50px;
+    font-size: 1rem;
+  }
+  .content-box {
+    max-width: 400px;
+  }
+  .task-boxes {
+    max-width: 400px;
+    height: 40px;
+  }
+  input {
+    width: 250px;
+    color: white;
+    transition: 0.5s ease-in-out;
+  }
+}
 * {
   font-family: "Fira sans", sans-serif;
 }

@@ -1,6 +1,7 @@
 @import './_variables';
 @import './_mixins';
 @import './_btns';
+@import './_media';
 
 * {
   font-family: 'Fira sans', sans-serif;
@@ -30,6 +31,7 @@ h1 {
   cursor: default;
   outline: none;
 }
+
 ::placeholder {
   @include gradient-text();
   opacity: 0.3;
@@ -90,4 +92,3 @@ input {
     color: gold;
   }
 }
-
