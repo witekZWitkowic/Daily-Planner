@@ -3,7 +3,7 @@
   font-weight: bold;
   padding: 0;
   margin-right: 15px;
-  @include gradient-text();
+  color: gold;
   @include underline(gold);
   @include btn();
 }
@@ -24,7 +24,7 @@
   font-weight: bold;
   border: none;
   transition: .2s ease-in;
-  @include gradient-text();
+  color: gold;
   &:hover {
     transform: scale(1.1);
     transition: .2s ease-in;
